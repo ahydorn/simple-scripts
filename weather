@@ -2,6 +2,6 @@
 
 curl wttr.in
 
-echo "🌦  Loading Doppler Radar..." "Please wait a moment.."
+echo "🌦  Loading Doppler Radar..." "Please wait a moment.." &&
 
-mpv --loop-file=inf "https://radar.weather.gov/lite/N0R/MUX_loop.gif"
+mpv --loop-file=inf  "https://radar.weather.gov/lite/N0R/MUX_loop.gif" >/dev/null 2>&1
