@@ -1,7 +1,11 @@
 #!/bin/sh
 
+# Grab weather forecast
 curl wttr.in
 
+# Create loading message for slower connections
 echo "🌦  Loading Doppler Radar..." "Please wait a moment.." &&
 
+# Open doppler image with mpv
 mpv --loop-file=inf  "https://radar.weather.gov/lite/N0R/MUX_loop.gif" >/dev/null 2>&1
+
